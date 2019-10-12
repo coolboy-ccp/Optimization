@@ -20,5 +20,6 @@ NSPersitsntContainer和其他类的关系参考[官方文档](https://developer.
 ## 右侧属性栏说明
 * 实体
 * 属性
-* ![attributes](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/attributes.png)
+
+![attributes](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/attributes.png)
 * 关系
