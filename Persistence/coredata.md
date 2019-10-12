@@ -20,4 +20,4 @@ NSPersitsntContainer和其他类的关系参考[官方文档](https://developer.
 ## 右侧属性栏
 * [实体](/Persistence/entities.md)
 * [属性](/Persistence/attributies.md)
-* [关系](/Persistence/relationships.,d)
+* [关系](/Persistence/relationships.md)
