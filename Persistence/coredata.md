@@ -21,6 +21,6 @@ NSPersitsntContainer和其他类的关系参考[官方文档](https://developer.
 * [实体](/Persistence/entities.md)
 * [属性](/Persistence/attributies.md)
 * [关系](/Persistence/relationships.md)
-## 访问
-* [request](/Persistence/request.md)
-* [batch request](/Persistence/batchRequest.md)
+## 操作
+* [Fetch](/Persistence/request.md)
+* [Save & Update](/Persistence/batchRequest.md)
