@@ -17,7 +17,10 @@ NSPersitsntContainer和其他类的关系参考[官方文档](https://developer.
 5. [添加属性](https://developer.apple.com/documentation/coredata/modeling_data/configuring_attributes)
 6. [添加关系](https://developer.apple.com/documentation/coredata/modeling_data/configuring_relationships)
 7. [生成类](https://developer.apple.com/documentation/coredata/modeling_data/generating_code)
-## 右侧属性栏
+### 右侧属性栏
 * [实体](/Persistence/entities.md)
 * [属性](/Persistence/attributies.md)
 * [关系](/Persistence/relationships.md)
+## 访问
+* [request](/Persistence/request.md)
+* [batch request](/Persistence/batchRequest.md)
