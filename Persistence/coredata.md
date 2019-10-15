@@ -23,4 +23,4 @@ NSPersitsntContainer和其他类的关系参考[官方文档](https://developer.
 * [关系](/Persistence/relationships.md)
 ## 操作
 * [Fetch](/Persistence/request.md)
-* [Save & Update](/Persistence/batchRequest.md)
+* [Changes](/Persistence/changes.md)
