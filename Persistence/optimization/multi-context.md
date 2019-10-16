@@ -32,7 +32,7 @@ func sample(_ objectIDs: [NSManagedObjectID]) {
      }
 } 
 ```
-![passed in one coordinator](https://github.com/coolboy-ccp/Optimization/blob/master/optimization/images/Persistence/optimization/images/oneCoordinatorPass.png)
+![passed in one coordinator](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/optimization/images/oneCoordinatorPass.png)
 ### 独立NSPresistentStoreCoordinator
 通过该NSManagedObjectID对象的 URIRepresentation 来重建对象的 ID。可以使用持久化存储协调器的 managedObjectID(forURIRepresentation:) 方法来实现这个操作
 ```
