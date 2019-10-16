@@ -32,8 +32,7 @@ func sample(_ objectIDs: [NSManagedObjectID]) {
      }
 } 
 ```
-* 流程图
-![passed in one coordinator](https://github.com/coolboy-ccp/Optimization/blob/master/optimization/images/Persistence/oneCoordinatorPass.png)
+![passed in one coordinator](https://github.com/coolboy-ccp/Optimization/blob/master/optimization/images/Persistence/optimization/images/oneCoordinatorPass.png)
 ### 独立NSPresistentStoreCoordinator
 通过该NSManagedObjectID对象的 URIRepresentation 来重建对象的 ID。可以使用持久化存储协调器的 managedObjectID(forURIRepresentation:) 方法来实现这个操作
 ```
@@ -49,7 +48,6 @@ let targetID = psc.managedObjectID(forURIRepresentation: uri)! return separatePS
 // ... results 现在可以在主队列中使用了 }
 }
 ```
-* 流程图
 ![passed in coordinators](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/optimization/images/coordinatorsPass.png)
 
 ## 并发设置
@@ -59,8 +57,10 @@ let targetID = psc.managedObjectID(forURIRepresentation: uri)! return separatePS
 ![coordinators](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/optimization/images/coordinators.png)
 ### sub context
 * 主线程上下文做为私有上下文的子上下文
+
 ![sub contest](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/optimization/images/subContext.png)
 * 临时子上下文
+
 ![temp sub contest](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/optimization/images/tempSubContext.png)
 
 
