@@ -17,15 +17,15 @@ NSPersitsntContainer和其他类的关系参考[官方文档](https://developer.
 5. [添加属性](https://developer.apple.com/documentation/coredata/modeling_data/configuring_attributes)
 6. [添加关系](https://developer.apple.com/documentation/coredata/modeling_data/configuring_relationships)
 7. [生成类](https://developer.apple.com/documentation/coredata/modeling_data/generating_code)
-### 右侧属性栏
-* [实体](/Persistence/base/entities.md)
-* [属性](/Persistence/base/attributies.md)
-* [关系](/Persistence/base/relationships.md)
+8. 右侧属性栏
+   * [实体](/Persistence/base/entities.md)
+   * [属性](/Persistence/base/attributies.md)
+   * [关系](/Persistence/base/relationships.md)
 ## 操作
 * [Fetch](/Persistence/base/request.md)
 * [Changes](/Persistence/base/changes.md)
 ## 性能
 * [基础性能优化点](/Persistence/optimization/optimization.md)
-* [multi-context](Persistence/optimization/multi-context.md)
-* [谓词](Persistence/optimization/predicate.md)
+* [multi-context](/Persistence/optimization/multi-context.md)
+* [谓词](/Persistence/optimization/predicate.md)
 ## 版本迁移
