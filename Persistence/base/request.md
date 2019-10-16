@@ -13,7 +13,7 @@
 8. 调用者获取到托管对象数组
 
 上述操作是同步操作，流程如下:
-![request](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/request.png)
+![request](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/base/images/request.png)
 
 ## Fault properties & 数据填充流程
 If returnsObjectAsFaults(Defaults is true) == true, NSFetchRequest在返回结果时返回一个惰性值。惰性值是一些没有实际数据的轻量级对象，它们会在使用时被填充。
@@ -28,7 +28,7 @@ If returnsObjectAsFaults(Defaults is true) == true, NSFetchRequest在返回结�
 但是，通过设置 includesPropertyValues 属性为 false，你可以改变特定获取请求的默认行为， 防止它从数据库里加载除了对象 ID 之外的任何属性值。
 
 惰性数据填充流程如下图:
-![lazy object](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/FaultProperties.png)
+![lazy object](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/base/images/FaultProperties.png)
 ## 刷新对象
 当然，你也可以反过来把一个已经实体化的托管对象转成一个惰值。要做到这一点，可以为这 个对象调用上下文的 refresh(_ object:mergeChanges:) 方法。这个方法的第二个参数， mergeChanges，只在对象有未保存的更改的时才起作用。在这种情况下，传一个 true 值并不 会把对象变成惰值;相反，它会从行缓存里更新那些不变的属性，并保留所有未保存的更改。 这几乎总是你想要做的 (refreshAllObjects() 方法的做法也是如此)。
 如果你指定 mergeChanges 为 false，这个对象会被强转成一个惰值，未保存的更改也会丢失。 所以使用它时需要非常谨慎，尤其要处理的关系上有未保存的更改时。在这种情况下，强行把 一个对象变成惰值可能会在你的数据里引入参照完整性问题 (referential integrity issue)。

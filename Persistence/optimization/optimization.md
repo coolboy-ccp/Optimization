@@ -1,11 +1,11 @@
 #  Coredata_性能
 ## 层级
-![optimization](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/optimization.png)
+![optimization](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/optimization/images/optimization.png)
 为了使用 Core Data，我们需要让我们的数据处于上下文层，也即由上下文和托管对象 所组成的层。我们需要下降到其他层才能把数据放到该层中来。因此为了优化性能，我们需要 尽可能地限制返回这些层的次数;这是几乎所有改善 Core Data 性能技术的关键部分。
 ## 避免获取请求
 
-### 关系
-![city-person](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/cityPerson.jpg)
+### 使用关系
+![city-person](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/optimization/images/cityPerson.jpg)
 * to-one
 有一个city对象，需求是获取市长。有如下两种方案:
 1. 访问city对象的mayor：
@@ -50,7 +50,7 @@ extension NSManagedObject {
 ```
 在对象不是惰值的时候才计算谓词，否则会将惰值填充
 ### 类似单例的对象
-通过userInfo实现primaryKey, 参考[MagicalRecord](https://github.com/magicalpanda/MagicalRecord)。这种实现在第一次调用的时候会执行请求，性能和之前一样(忽略userinfo的存储性能), 但在之后的调用就会特别快了。在对象被删除后，需要手动清除在userinfo字典里的缓存。
+通过userInfo实现primaryKey(iOS9之后使用constraints), 参考[MagicalRecord](https://github.com/magicalpanda/MagicalRecord)。这种实现在第一次调用的时候会执行请求，性能和之前一样(忽略userinfo的存储性能), 但在之后的调用就会特别快了。在对象被删除后，需要手动清除在userinfo字典里的缓存。
 
 ### 小数据集
 另外的场景是处理相对小的数据集。要么事先你就知道整个 app 的对象数量不会超过几百个， 要么你知道特定的实体的对象数目不会超过几百个。

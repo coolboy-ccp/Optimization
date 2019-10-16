@@ -1,5 +1,5 @@
 #  Coredata_关系
-![attributes](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/relationships.png)
+![attributes](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/base/images/relationships.png)
 * Transient, 是否持久化
 * Inverse, 设置逆向关系
 * Delete Rule, 删除规则
@@ -10,7 +10,7 @@
 * to-many
 * many-to-many
 ## Delete Rule
-![rule](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/rule.png)
+![rule](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/base/images/rule.png)
 * Deny
    如果关系目标里还有对象，则无法删除当前对象
 * Nullify

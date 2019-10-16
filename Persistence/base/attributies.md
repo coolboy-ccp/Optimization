@@ -1,6 +1,6 @@
 #  Coredata_属性
 
-![attributes](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/attributes.png)
+![attributes](https://github.com/coolboy-ccp/Optimization/blob/master/Persistence/base/images/attributes.png)
 
 * Transient, 是否存入持久化存储区
 * Indexed, 设置该属性为索引, 提升搜索效率，代价是额外的存储空间
