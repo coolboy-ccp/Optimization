@@ -28,4 +28,10 @@ NSPersitsntContainer和其他类的关系参考[官方文档](https://developer.
 * [基础性能优化点](/Persistence/optimization/optimization.md)
 * [multi-context](/Persistence/optimization/multi-context.md)
 * [谓词](/Persistence/optimization/predicate.md)
-## 版本迁移
+* [版本迁移](/Persistence/optimization/migration.md)
+## 性能分析方法
+* 打开SQL日志
+product-->edit scheme-->Arguments passed on launch--> -com.apple.CoreData.SQLDebug 1
+* 打开线程调试日志
+product-->edit scheme-->Arguments passed on launch--> -com.apple.CoreData.ConcurrencyDebug 1
+* Xcode-->Open developer tool --> Instruments-->Core Data
